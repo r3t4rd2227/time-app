@@ -1,6 +1,6 @@
 services:  
   fastapi_app: 
-    image: jbadeyi/repo1:time-app
+    image: jbadeyi/repo1:fastapi_app
     container_name: time-app
     # command: python main.py
     restart: unless-stopped
