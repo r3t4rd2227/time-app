@@ -26,8 +26,7 @@ services:
       - mynetwork 
 
   certbot:  
-    image: certbot/certbot  
-    # command: certonly --webroot --webroot-path=/var/www/certbot -d jbadeyi.xyz -d www.jbadeyi.xyz --email jbadeyi@icloud.com --agree-tos --non-interactive --quiet
+    image: certbot/certbot 
     volumes:
       - ./certbot/www:/var/www/certbot 
       - ./certbot/conf:/etc/letsencrypt  
